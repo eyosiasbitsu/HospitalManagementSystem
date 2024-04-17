@@ -41,7 +41,35 @@ npm start
 - `PUT /appointments/{id}`: Update an existing appointment.
 - `DELETE /appointments/{id}`: Cancel an appointment.
 
-... (similarly list other endpoints as needed)
+### Medical Records Management
+- **GET /medicalRecords/{patientId}**: Retrieve medical records for a patient.
+- **POST /medicalRecords**: Add new medical record entry.
+- **PUT /medicalRecords/{recordId}**: Update a medical record entry.
+
+### Administration Functions
+- **POST /users**: Create new user account (for hospital staff).
+- **GET /users/{id}**: Get user details.
+- **PUT /users/{id}**: Update user information.
+- **DELETE /users/{id}**: Deactivate a user account.
+
+### Finance and Billing
+- **GET /billing/{patientId}**: Retrieve billing information for a patient.
+- **POST /billing**: Create a new billing record.
+- **PUT /billing/{billId}**: Update billing information.
+
+### Pharmacy Management
+- **GET /pharmacy/medicines**: List all medicines.
+- **POST /pharmacy/medicines**: Add new medicine to the store.
+- **PUT /pharmacy/medicines/{medicineId}**: Update medicine details.
+- **DELETE /pharmacy/medicines/{medicineId}**: Remove medicine from inventory.
+
+### Lab Management
+- **POST /labs/tests**: Request new lab tests.
+- **GET /labs/results/{patientId}**: Retrieve lab results for a patient.
+
+### Notifications and Alerts
+- **POST /notifications**: Send out a notification.
+- **GET /notifications/{userId}**: Retrieve notifications for a user.
 
 ## Directory Structure
 
